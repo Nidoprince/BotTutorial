@@ -13,22 +13,23 @@
     <h3>3.  Record ID and Bot Token</h3>
     <p>In the general information setting, you can find the id.  Copy this down.  Then go to the bot section, and copy the bot token.</p>
     <h3>4.  Add the Bot to your Server</h3>
-    <p>Copy the following url: https://discordapp.com/oauth2/authorize?&client_id=CLIENTID&scope=bot&permissions=0</p>
+    <p>Copy the following URL: https://discordapp.com/oauth2/authorize?&client_id=CLIENTID&scope=bot&permissions=0</p>
     <p>Now, replace the part that says CLIENTID with the id you recorded in the previous step.  Paste this into your browser and go there.  Then select the server you want to add the bot to and click authorize.</p>
     <h3>5.  Write the package.json file</h3>
     <p>Make a folder where you want to keep the bot on your computer.  In that folder you want to make a new file called package.json.  Look at the code in this <a href="https://github.com/Nidoprince/BotTutorial/blob/master/package.json">link</a> to see what you should put in it, changing the author and the bot name to whatever you want.</p>
     <h3>6.  Write the Code</h3>
-    <p>We are using javascript for this tutorial, so make a file called testBot.js, or whatever name you want for it.  If you choose a different name though, make sure to change the name in the package.json file as well.  Again, you can follow the exapmple in this <a href = "https://github.com/Nidoprince/BotTutorial/blob/master/testBot.js">link</a>.</p>
+    <p>We are using JavaScript for this tutorial, so make a file called testBot.js, or whatever name you want for it.  If you choose a different name though, make sure to change the name in the package.json file as well.  Again, you can follow the example in this <a href = "https://github.com/Nidoprince/BotTutorial/blob/master/testBot.js">link</a>.</p>
     <h3>7.  Install Packages</h3>
-    <p>Open up a console, or powershell, naviage to the folder you have your code in, and then type npm install.  You'll get some warnings, but you can ignore them, as long as the discord.js package is installed.  You can check that it did install by looking in the node_modules folder.</p>
+    <p>Open up a console, or PowerShell, navigate to the folder you have your code in, and then run: npm install.  You'll get some warnings, but you can ignore them, as long as the discord.js package is installed.  You can check that it did install by looking in the node_modules folder.</p>
     <h3>8.  Save token</h3>
     <p>Now, we need to save our bot token in a way that will not be shared if we share the code.  There are a couple ways to do this, but the way it works in the example code is that you need to save the token in your environment variables.</p>
-    <p>Search your computer for environment variables.  It should open up something called "system properties".  Click "Environment Variables" at the bottom of the Advanced tab.  In the lower half of the dialogue that pops up, click new.  Name the vairable TEST_BOT_TOKEN and make the value the token you copied down in step 3.  Hit OK.</p>
+    <p>If you are using a Windows OS, search your computer for environment variables.  It should open up something called "system properties".  Click "Environment Variables" at the bottom of the Advanced tab.  In the lower half of the dialogue that pops up, click new.  Name the variable TEST_BOT_TOKEN and make the value the token you copied down in step 3.  Hit OK.</p>
+    <p>If you're on a Mac you'll need to update the .bash_profile file to include the new variable.</p>
     <h3>9.  Run the bot</h3>
-    <p>Open a new console or powershell instance.  The one you had open before will not have the new environment variable you just set.  Navigate to your bot folder and type: npm start</p>
+    <p>Open a new console or PowerShell instance.  The one you had open before will not have the new environment variable you just set.  Navigate to your bot folder and run: npm start.</p>
     <p>After a moment you should see a few things, and it will say "I am ready!".  If so, your bot is running.  You can go into Discord and type !hello and it will respond.  If there is an error, then one of the steps got messed up and you will have to debug.</p>
     <h3>10.  Add additional functionality</h3>
-    <p>Now that you have the basic functionality working, it's not too hard to add more to the bot.  We are using the discord.js api, so you can check out their documentation at: <a href="https://discord.js.org/#/">https://discord.js.org/#/</a>.  Look around there, and start making something cool.</p>
+    <p>Now that you have the basic functionality working, it's not too hard to add more to the bot.  We are using the discord.js API, so you can check out their documentation at: <a href="https://discord.js.org/#/">https://discord.js.org/#/</a>.  Look around there, and start making something cool.</p>
     <p>If you have any questions, please feel free to contact me on twitter @nidoprince.</p>
   </body>
 </html>
